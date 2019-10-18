@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "name": "devdesk-api-test",
+    "builds": [{ "src": "devdesk-api-test/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "routes": [
+        { "src": "/(.*)", "dest": "devdesk-api-test/$1" }
+    ]
+}
